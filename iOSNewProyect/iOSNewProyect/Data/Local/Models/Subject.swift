@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Subject {
+class Subject: CustomStringConvertible {
    
     var name: String?
     var teachers: [Teacher] = []
@@ -20,6 +20,11 @@ class Subject {
     var numStudents: Int {
         return students.count
     }
+    
+    var description: String {
+        return "Subject data: \(String(describing: name))"
+    }
+    
     
     convenience init(name: String, teachers: [Teacher] = [], students: [Student] = []) {
         self.init()

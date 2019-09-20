@@ -6,15 +6,14 @@
 //  Copyright © 2019 kolbStudio. All rights reserved.
 //
 
+
+import Foundation
+
 enum TeacherType: String {
     case intern
     case extern
 }
-
-
-import Foundation
-
-class Teacher: Hashable {
+class Teacher: Hashable, CustomStringConvertible {
     
     // Equatable protocol implementation
     static func == (lhs: Teacher, rhs: Teacher) -> Bool {
@@ -34,6 +33,11 @@ class Teacher: Hashable {
     var name: String?
     var email: String?
     var type: TeacherType?
+    
+    var description: String {
+        return "Student data: \(String(describing: name)) \(String(describing: email))"
+    }
+    
     
     convenience init(name: String, email: String? = nil, type: TeacherType? = nil) {
         self.init()
