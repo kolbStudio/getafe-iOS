@@ -9,13 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var label:UILabel!
+    @IBOutlet weak var actionButton: UIButton!
+    @IBOutlet weak var tableViewName: UITableView!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        }
+    
     }
+    
+    
     
 
 
-}
+
 
