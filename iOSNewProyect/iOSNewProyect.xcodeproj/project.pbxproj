@@ -11,6 +11,7 @@
 		D920D3902333FF8500C8549F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D920D38F2333FF8500C8549F /* ViewController.swift */; };
 		D920D3932333FF8500C8549F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D920D3912333FF8500C8549F /* Main.storyboard */; };
 		D920D3982333FF8C00C8549F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D920D3962333FF8C00C8549F /* LaunchScreen.storyboard */; };
+		D963D7D6233BD66F00A44894 /* StudentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D963D7D5233BD66F00A44894 /* StudentViewCell.swift */; };
 		D9BCA763233BB12B0031B614 /* StudentViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BCA762233BB12B0031B614 /* StudentViewControler.swift */; };
 		D9BE70172335350300124C72 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE70162335350300124C72 /* Student.swift */; };
 		D9BE70192335473F00124C72 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BE70182335473F00124C72 /* Teacher.swift */; };
@@ -26,6 +27,7 @@
 		D920D3922333FF8500C8549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D920D3972333FF8C00C8549F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D920D3992333FF8C00C8549F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D963D7D5233BD66F00A44894 /* StudentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewCell.swift; sourceTree = "<group>"; };
 		D9BCA762233BB12B0031B614 /* StudentViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewControler.swift; sourceTree = "<group>"; };
 		D9BE70162335350300124C72 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		D9BE70182335473F00124C72 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
@@ -100,7 +102,6 @@
 		D9BE701023352BDF00124C72 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				D9BE701223352BFA00124C72 /* Controlers */,
 				D9BE701123352BF200124C72 /* Views */,
 			);
 			path = UI;
@@ -109,6 +110,7 @@
 		D9BE701123352BF200124C72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D9BE701223352BFA00124C72 /* Controlers */,
 				D9BE701323352C6700124C72 /* Storyboard */,
 			);
 			path = Views;
@@ -119,6 +121,7 @@
 			children = (
 				D9BCA762233BB12B0031B614 /* StudentViewControler.swift */,
 				D920D38F2333FF8500C8549F /* ViewController.swift */,
+				D963D7D5233BD66F00A44894 /* StudentViewCell.swift */,
 			);
 			path = Controlers;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9BE70192335473F00124C72 /* Teacher.swift in Sources */,
+				D963D7D6233BD66F00A44894 /* StudentViewCell.swift in Sources */,
 				D9BE701B2335475500124C72 /* Subject.swift in Sources */,
 				D920D3902333FF8500C8549F /* ViewController.swift in Sources */,
 				D9BCA763233BB12B0031B614 /* StudentViewControler.swift in Sources */,

@@ -22,7 +22,6 @@ class StudentViewControler: UIViewController {
         configureTableView()
     }
     
-   
 }
 
 extension StudentViewControler: UITableViewDataSource, UITableViewDelegate {
@@ -37,8 +36,22 @@ extension StudentViewControler: UITableViewDataSource, UITableViewDelegate {
         return defaultStudents.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    func tableView(_ tableView: UITableView, cellForRowAt
+        indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier:
+            "StudentViewCell",
+                                                 for: indexPath) as?
+        StudentViewCell else {
+            return UITableViewCell()
+        }
+        
+        if (indexPath.row < defaultStudents.count) {
+          let student = defaultStudents[indexPath.row]
+          cell.configureCell(student: student)
+        }
+        
+        return cell
     }
     
    
