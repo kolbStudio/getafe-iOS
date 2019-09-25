@@ -8,13 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    
-    @IBOutlet weak var label:UILabel!
-    @IBOutlet weak var actionButton: UIButton!
-    @IBOutlet weak var tableViewName: UITableView!
-    
-    
+class ViewController: UITabBarController {
     
     
     override func viewDidLoad() {
