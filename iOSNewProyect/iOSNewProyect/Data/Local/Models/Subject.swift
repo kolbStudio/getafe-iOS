@@ -34,5 +34,6 @@ class Subject: CustomStringConvertible {
         self.teachers = teachers
         self.students = students
         self.avatar = avatar
+        
     }
 }
