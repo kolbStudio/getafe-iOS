@@ -24,7 +24,8 @@ class SubjectViewControler: UIViewController {
     
 }
 
-extension SubjectViewControler: UICollectionViewDataSource, UICollectionViewDelegate {
+extension SubjectViewControler: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return defaultSubjects.count
     }
@@ -55,5 +56,20 @@ extension SubjectViewControler: UICollectionViewDataSource, UICollectionViewDele
         
     }
     
-   
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16.0
+        
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 16.0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let size = (collectionView.frame.size.width - 16.0) / 2
+        
+        return CGSize (width: size, height: size)
+    }
+    
 }
+
