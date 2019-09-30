@@ -24,6 +24,15 @@ class TeacherViewCell: UITableViewCell {
         
     }
     
+    
+     override func awakeFromNib() {
+           super.awakeFromNib()
+           
+           View2.layer.cornerRadius = 8.0
+           View2.configureShadows()
+       }
+    
+    
     func configureCell(teacher: Teacher) {
         image2.image = UIImage (named: teacher.avatar ?? "")
         label3.text = teacher.name

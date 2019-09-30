@@ -23,6 +23,12 @@ class StudentViewCell: UITableViewCell {
         label2.text = nil
         
     }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        View1.layer.cornerRadius = 8.0
+        View1.configureShadows()
+    }
     
     func configureCell(student: Student) {
         image1.image = UIImage (named: student.avatar ?? "")

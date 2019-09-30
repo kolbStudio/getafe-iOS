@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:iOSNewProyect.xcodeproj">
+      location = "group:/Users/dev2/Desktop/GitKrakenMETHODS/getafe-iOS/iOSNewProyect/Extensions">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

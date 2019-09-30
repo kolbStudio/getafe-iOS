@@ -10,9 +10,11 @@ import UIKit
 
 class SubjectViewCell: UICollectionViewCell {
     
+    
     // MARK: - IBOutlet
     @IBOutlet weak var image2 : UIImageView!
     @IBOutlet weak var label3 : UILabel!
+    @IBOutlet weak var view: UIView!
     
     
     
@@ -22,6 +24,13 @@ class SubjectViewCell: UICollectionViewCell {
 
         
     }
+    
+    override func awakeFromNib() {
+           super.awakeFromNib()
+           
+         view.layer.cornerRadius = 8.0
+         view.configureShadows()
+       }
     
     func configureCell(subject: Subject) {
         image2.image = UIImage (named: subject.avatar ?? "")
